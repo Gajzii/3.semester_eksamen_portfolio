@@ -1,0 +1,396 @@
+:root {
+    /*----- GLOBAL VARIABLES-----*/
+    --primary-font-color: #1F1F1F;
+    --primary-grey: #BBBBBB;
+    --primary-white: #D5D3CE;
+    --primary-gold: #ceac68;
+  }
+  /*----- GENERAL STYLING -----*/
+  html {
+    height: 100%;
+    width: 100%;
+    font-family: "Abel";
+    background-color: #222222;
+    color: var(--primary-font-color);
+    font-size: 1em;
+    font-weight: lighter !important;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  } 
+  footer {
+    width: 100%;
+  }
+  h1{
+      display: none;
+  }
+  h2{
+      color: var(--primary-font-color);
+      font-size: 1.5em;
+      font-weight: lighter !important;
+  }
+  h3, h4{
+    color: var(--primary-gold);
+  }
+  h5{
+    color: var(--primary-grey);
+    font-size: 1.5em;
+    font-weight: lighter !important;
+  }
+  button{
+    padding: 10px;
+    border-radius: 25px;
+    background-color: var(--primary-white);
+    color: (--primary-font-color);
+    border: none;
+    font-family: "Gill Sans";
+    font-size: 20px;
+  }
+  .button_secondary{
+    border: 2px solid var(--primary-white);
+    color: var(--primary-white);
+    background-color: var(--primary-font-color);
+  }
+  .flexbox{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+  }
+/* ------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- header ------------------------------------------------- */
+  .headerImgDesktop{
+    display: none;
+  }
+  @media (min-width: 600px) {
+    .headerImgDesktop{
+      margin-top: 20px;
+      display: block;
+      width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    .headerImgDesktop{
+      margin-top: 20px;
+      display: block !important;
+      width: 100%;
+    }
+  }
+    .headerImgMobile{
+      display: block;
+      width: 100%;
+      margin-top: 120px !important;
+    }
+    @media (min-width: 600px) {
+      .headerImgMobile{
+        display: none;
+      }
+    }
+    @media (min-width: 992px) {
+      .headerImgDesktop{
+        display: none;
+      }
+    }
+/* ------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- some --------------------------------------------------- */
+  .some{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+  @media (min-width: 600px) {
+    .some {
+      right: 10px;
+      left: auto;
+      transform: none;
+    }
+  }
+  @media (min-width: 992px) {
+    .some {
+      right: 10px;
+      transform: none;
+      left: auto;
+    }
+  }
+  .some_flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 350px;
+  }
+  .some_item{
+      width: auto;
+      height: 30px;
+      cursor: pointer;
+  }
+  .arrow_vertical{
+      transform: rotate(90deg);
+  }
+  .praktik{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    cursor: pointer;
+  }
+  @media (min-width: 600px) {
+    .praktik{
+      top: 10px;
+      left: 10px;
+      transform: none;
+    }
+  }
+  @media (min-width: 992px) {
+    .praktik{
+      top: 10px;
+      left: 10px;
+      transform: none;
+    }
+  }
+/* ------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- portfolio cards ---------------------------------------- */
+.detailViewContent{
+background-color: white;
+width: 80%;
+margin: 10%;
+padding: 2%;
+border-radius: 25px;
+}  
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5%;
+    gap: 2%;
+    margin-bottom: 530px;
+  }
+  @media (min-width: 600px) {
+    .grid-container {
+       grid-template-columns: 1fr 1fr;
+       padding: 2%;
+       margin-bottom: 140px;
+    }
+  }
+  @media (min-width: 992px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr;
+      padding: 2%;
+      margin-bottom: 220px;
+    }
+  }
+  .grid-container>article {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px var(--primary-brown);
+    opacity: 1;
+  }
+  .grid-container>article:hover {
+    opacity: 0.3;
+  }
+  .grid-container>article img {
+    width: auto;
+    height: 150px;
+  }
+  @media (min-width: 992px) {
+    .grid-container>article img {
+        height: 260px;
+    }
+  }
+/* ------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- detail view -------------------------------------------- */
+  .detail-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    gap: 1em;
+  }
+  @media (min-width: 600px) {
+    .detail-grid {
+       grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (min-width: 992px) {
+    .detail-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .detail-grid article {
+    text-align: left;
+  }
+  .detail-grid iframe {
+    width: 100%;
+    height: 400px;
+  }
+  .draupnir_danmark_linje{
+    width: 100px;
+    float: left;
+  }
+  .featuredImg {
+    max-width: 100%;
+    max-height: 300px;
+    margin: 0 auto;
+  }
+  .beskrivelse {
+    padding-left: 10px;
+    border-left: none;
+  }
+  @media (min-width: 600px) {
+    .beskrivelse {
+      border-left: 1px solid var(--primary-gold);
+    }
+  }
+  @media (min-width: 992px) {
+    .beskrivelse {
+      border-left: 1px solid var(--primary-gold);
+    }
+  }
+  .detailViewImg{
+    width: 90%;
+    padding-top: 10px;
+  }
+  .detailViewImgText{
+    font-style: italic;
+    color: var(--primary-grey);
+    float: left;
+    margin: 0 40px;
+    font-size: 0.9em;
+  }
+  .detailViewGallery{
+    margin: 20px 0 60px 0;
+    text-align: center;
+  }
+/* ------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- loader ------------------------------------------------- */
+  /*#loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999;
+    overflow: hidden;
+    background: var(--loader-background-color);
+    text-align: center;
+  }
+  .spinner {
+    border: 5px solid var(--light-grey);
+    border-radius: 50%;
+    border-top: 5px solid var(--light-green);
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 1s linear infinite;
+    /* Safari */
+    /*animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+/* ------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- footer ------------------------------------------------- */
+  .footer_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    margin-top: -60px;
+  }
+  @media (min-width: 600px) {
+    .footer_content {
+      flex-direction: row;
+    }
+  }
+  @media (min-width: 992px) {
+    .footer_content {
+      flex-direction: row;
+    }
+  }
+  .footerImgDesktop{
+    display: none;
+  }
+  @media (min-width: 600px) {
+    .footerImgDesktop{
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  @media (min-width: 992px) {
+    .footerImgDesktop{
+      display: block !important;
+      width: 100%;
+    }
+  }
+    .footerImgMobile{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    @media (min-width: 600px) {
+      .footerImgMobile{
+        display: none;
+      }
+    }
+    @media (min-width: 992px) {
+      .footerImgDesktop{
+        display: none;
+      }
+    }
+/* ------------------------------------------------------------------------------------------------- */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 25px;
+}
+
+/* The Close Button */
+.close {
+  color: var(--primary-gold);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.praktik_kode{
+  max-width: 350px;
+}

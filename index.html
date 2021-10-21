@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <title>m.wennerwald</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="title" content="m.wennerwald portfolio"/>
+    <meta name="description" content="portfolio for m.wennerwald maja wennerwald grafisk design kode frontend"/>
+    <meta name="subject" content="portfolio for m.wennerwald maja wennerwald grafisk design kode frontend"/>
+    <meta name="author" content="Maja Wennerwald"/>
+  </head>
+
+  <body onhashchange="pageChange()" onload="load()">
+<!-- ---------------------------------------- home section ------------------------------------------- -->
+    <section id="index" class="page">
+    <header>
+        <img src="img/header5.jpg" alt="maja wennerwald portfolio" class="headerImgDesktop">
+        <img src="img/headermobile.jpg" alt="maja wennerwald portfolio" class="headerImgMobile">
+        <h1>m.wennerwald portfolio</h1>
+    </header>
+
+    <main>
+    <!-- ---------------------------------------- some --------------------------------------------------- -->
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn" class="praktik">Praktikplads søges</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="detail-grid">
+              <div>
+              <h2>Jeg leder efter verdens bedste praktikplads!</h2>
+              <img src="img/kode.png" class="praktik_kode"><br><br>
+              <a href="/img/maja_blom_wennerwald_nielsen_cv.pdf" download><button>Download CV</button></a>
+              </div>
+              <iframe width="950" height="534" src="https://www.youtube.com/embed/DV-ozzfR7d0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+  </div>    
+    
+    <div class="some">
+            <div class="some_flex">
+                <img src="img/icons/her_er_mit_liv.png" alt="some" class="some_item">
+                <img src="img/icons/arrow1.png" alt="some" class="some_item arrow_vertical">
+                <a href="https://www.linkedin.com/in/maja-blom-wennerwald-nielsen"><img src="img/icons/linkedin.png" alt="some" class="some_item"></a>
+                <a href="https://www.github.com/Gajzii"><img src="img/icons/github.png" alt="some" class="some_item"></a>
+                <a href="https://www.facebook.com/maja.blomwennerwaldnielsen"><img src="img/icons/facebook.png" alt="some" class="some_item"></a>
+                <a href="https://www.instagram.com/m.wennerwald/"><img src="img/icons/instagram.png" alt="some" class="some_item"></a>
+                <a href="https://steamcommunity.com/profiles/76561198089432741"><img src="img/icons/steam.png" alt="some" class="some_item"></a>
+            </div>
+        </div>
+
+        
+    <!-- ------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------- portfolio cards ---------------------------------------- -->
+            <div class="grid-container" id="cardId" onclick="window.scrollTo(0, 0);"></div>
+  </section>
+    <!-- ------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------- detail view section ------------------------------------ -->
+    <!-- detail page -->
+  <section id="detailView" class="page">
+    <div class="detailViewContent">
+        <a class="left close" href="#index">&times;</a>
+        <section id="detailViewContainer" class="detail-grid"></section>
+        <section id="detailViewContainer2"></section>
+    </div>
+  </section>
+</main>
+<!-- ------------------------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------- footer ------------------------------------------------- -->
+    <footer>
+        <img src="img/footer6.jpg" class="footerImgDesktop">
+        <img src="img/footermobile.jpg" class="footerImgMobile">
+        <div class="footer_content">
+            <h4>
+              m.wennerwald@outlook.com
+            </h4>
+            <h4>
+              © Copyright 2021 Maja Wennerwald
+            </h4>
+        </div>
+    </footer>
+
+    <script src="js/spa.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
